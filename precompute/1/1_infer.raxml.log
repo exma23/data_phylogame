@@ -1,0 +1,91 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD Eng Sample: 100-000000425_37/24_N, 64 cores, 503 GB RAM
+
+RAxML-NG was called at 04-May-2026 23:58:15 as follows:
+
+raxml-ng --search --msa /root/final_thesis/data/dna/test/1/data.phy --tree /root/final_thesis/data/dna/test/1/start.newick --model GTR{1.93478/3.23359/1.85434/0.70495/8.02616/1.00000}+I{0.000}+G{0.253}+F{0.20956/0.32185/0.28123/0.18737} --prefix precompute/1/1_infer --threads auto --seed 42 --force perf_threads
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): user
+  random seed: 42
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  logLH epsilon: general: 10.000000, brlen-triplet: 1000.000000
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  fast CLV updates: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: /root/final_thesis/data/dna/test/1/data.phy
+[00:00:00] Loaded alignment with 7 taxa and 593 sites
+
+Alignment comprises 1 partitions and 49 patterns
+
+Partition 0: noname
+Model: GTR{1.93478/3.23359/1.85434/0.70495/8.02616/1}+FU{0.20956/0.32185/0.28123/0.18737}+IU{0}+G4m{0.253}
+Alignment sites / patterns: 593 / 49
+Gaps: 0.00 %
+Invariant sites: 86.34 %
+
+
+NOTE: Binary MSA file created: precompute/1/1_infer.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 1 thread(s)
+
+[00:00:00] Loading user starting tree(s) from: /root/final_thesis/data/dna/test/1/start.newick
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 49 / 784
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00 -1552.747115] Initial branch length optimization
+[00:00:00 -1344.809187] Model parameter optimization (eps = 10.000000)
+[00:00:00 -1344.506337] AUTODETECT spr round 1 (radius: 5)
+[00:00:00 -1294.280192] SPR radius for FAST iterations: 5 (autodetect)
+[00:00:00 -1294.280192] Model parameter optimization (eps = 3.000000)
+[00:00:00 -1294.255872] FAST spr round 1 (radius: 5)
+[00:00:00 -1294.254844] Model parameter optimization (eps = 1.000000)
+[00:00:00 -1294.254844] SLOW spr round 1 (radius: 5)
+[00:00:00 -1294.254844] Model parameter optimization (eps = 0.100000)
+
+[00:00:00] ML tree search #1, logLikelihood: -1294.254844
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.253000 (user),  weights&rates: (0.250000,0.002255) (0.250000,0.068865) (0.250000,0.507770) (0.250000,3.421111) 
+   P-inv (user): 0.000000
+   Base frequencies (user): 0.209558 0.321847 0.281227 0.187368 
+   Substitution rates (user): 1.934780 3.233590 1.854340 0.704950 8.026160 1.000000 
+
+
+Final LogLikelihood: -1294.254844
+
+AIC score: 2610.509687 / AICc score: 2610.964076 / BIC score: 2658.746825
+Free parameters (model + branch lengths): 11
+
+Best ML tree saved to: /root/final_thesis/precompute/1/1_infer.raxml.bestTree
+Optimized model saved to: /root/final_thesis/precompute/1/1_infer.raxml.bestModel
+
+Execution log saved to: /root/final_thesis/precompute/1/1_infer.raxml.log
+
+Analysis started: 04-May-2026 23:58:15 / finished: 04-May-2026 23:58:15
+
+Elapsed time: 0.021 seconds
+

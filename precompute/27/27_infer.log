@@ -1,0 +1,185 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    3b61efb33633 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree3 -s /root/final_thesis/data/dna/test/27/data.phy -t /root/final_thesis/data/dna/test/27/start.newick -m GTR{4.31245,11.08286,3.25880,9.27373,10.84176}+F{0.24423,0.20099,0.19049,0.36429}+I{0.431}+G4{99.835} --prefix precompute/27/27_infer --threads auto --redo
+Seed:    767986 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May  5 02:21:30 2026
+Kernel:  AVX+FMA - auto-detect threads (128 CPU cores detected)
+
+Reading alignment file /root/final_thesis/data/dna/test/27/data.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00184292 secs using 1.348e+04% CPU
+Alignment has 15 sequences with 494 columns, 70 distinct patterns
+39 parsimony-informative, 17 singleton sites, 438 constant sites
+       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0968428 secs using 1124% CPU
+   1  Sp000    0.40%    passed     97.19%
+   2  Sp001    0.00%    passed     99.78%
+   3  Sp002    0.40%    passed     98.30%
+   4  Sp003    9.92%    passed     99.19%
+   5  Sp004    0.40%    passed     99.80%
+   6  Sp005    0.20%    passed     99.95%
+   7  Sp006    8.10%    passed     98.99%
+   8  Sp007    0.20%    passed     99.36%
+   9  Sp008    0.20%    passed     98.71%
+  10  Sp009    0.40%    passed     98.30%
+  11  Sp010    0.40%    passed     98.42%
+  12  Sp011   18.02%    passed     59.84%
+  13  Sp012    0.40%    passed     98.66%
+  14  Sp013    0.20%    passed     91.49%
+  15  Sp014    0.40%    passed     99.38%
+****  TOTAL    2.65%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Sp009 is identical to Sp002 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.0976196 secs using 1164% CPU
+Reading input tree file /root/final_thesis/data/dna/test/27/start.newick ...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 128 CPU cores
+Increase to 10 rounds for branch lengths
+97934 trees examined
+Threads: 1 / Time: 128.001 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -1408
+Threads: 2 / Time: 251.425 sec / Speedup: 0.509 / Efficiency: 25% / LogL: -1408
+Determining AUTO threadcount: done in 379.426 secs using 154.5% CPU
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1649.888
+2. Current log-likelihood: -1412.639
+3. Current log-likelihood: -1406.969
+Optimal log-likelihood: -1406.969
+Rate parameters:  A-C: 4.31245  A-G: 11.08286  A-T: 3.25880  C-G: 9.27373  C-T: 10.84176  G-T: 1.00000
+Base frequencies:  A: 0.244  C: 0.201  G: 0.190  T: 0.364
+Proportion of invariable sites: 0.431
+Gamma shape alpha: 99.835
+Parameters optimization took 3 rounds (0.002 sec)
+Wrote distance file to... 
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1068.885
+Finish initializing candidate tree set (2)
+Current best tree score: -1068.885 / CPU time: 0.018
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 2: -1068.885
+BETTER TREE FOUND at iteration 3: -1068.884
+BETTER TREE FOUND at iteration 6: -1068.884
+BETTER TREE FOUND at iteration 9: -1068.884
+Iteration 10 / LogL: -1068.884 / Time: 0h:6m:19s
+BETTER TREE FOUND at iteration 17: -1068.884
+Iteration 20 / LogL: -1068.884 / Time: 0h:6m:19s
+BETTER TREE FOUND at iteration 27: -1068.884
+Iteration 30 / LogL: -1068.884 / Time: 0h:6m:19s (0h:21m:9s left)
+Iteration 40 / LogL: -1068.884 / Time: 0h:6m:19s (0h:14m:7s left)
+Iteration 50 / LogL: -1068.884 / Time: 0h:6m:19s (0h:9m:56s left)
+Iteration 60 / LogL: -1068.884 / Time: 0h:6m:19s (0h:7m:11s left)
+Iteration 70 / LogL: -1068.884 / Time: 0h:6m:19s (0h:5m:13s left)
+UPDATE BEST LOG-LIKELIHOOD: -1068.884
+BETTER TREE FOUND at iteration 73: -1068.883
+BETTER TREE FOUND at iteration 76: -1068.883
+Iteration 80 / LogL: -1068.884 / Time: 0h:6m:20s (0h:7m:41s left)
+BETTER TREE FOUND at iteration 90: -1068.883
+Iteration 90 / LogL: -1068.883 / Time: 0h:6m:20s (0h:7m:6s left)
+Iteration 100 / LogL: -1068.883 / Time: 0h:6m:20s (0h:5m:45s left)
+BETTER TREE FOUND at iteration 110: -1068.883
+Iteration 110 / LogL: -1068.883 / Time: 0h:6m:20s (0h:5m:48s left)
+Iteration 120 / LogL: -1068.884 / Time: 0h:6m:20s (0h:4m:47s left)
+Iteration 130 / LogL: -1068.884 / Time: 0h:6m:20s (0h:3m:55s left)
+Iteration 140 / LogL: -1068.884 / Time: 0h:6m:20s (0h:3m:11s left)
+Iteration 150 / LogL: -1068.884 / Time: 0h:6m:20s (0h:2m:33s left)
+BETTER TREE FOUND at iteration 151: -1068.883
+Iteration 160 / LogL: -1068.884 / Time: 0h:6m:20s (0h:3m:37s left)
+Iteration 170 / LogL: -1068.883 / Time: 0h:6m:20s (0h:3m:2s left)
+Iteration 180 / LogL: -1068.884 / Time: 0h:6m:20s (0h:2m:30s left)
+BETTER TREE FOUND at iteration 184: -1068.883
+Iteration 190 / LogL: -1068.884 / Time: 0h:6m:20s (0h:3m:9s left)
+Iteration 200 / LogL: -1068.884 / Time: 0h:6m:20s (0h:2m:40s left)
+Iteration 210 / LogL: -1068.885 / Time: 0h:6m:20s (0h:2m:14s left)
+Iteration 220 / LogL: -1068.884 / Time: 0h:6m:20s (0h:1m:51s left)
+Iteration 230 / LogL: -1068.884 / Time: 0h:6m:20s (0h:1m:29s left)
+BETTER TREE FOUND at iteration 240: -1068.883
+Iteration 240 / LogL: -1068.883 / Time: 0h:6m:20s (0h:2m:39s left)
+BETTER TREE FOUND at iteration 247: -1068.883
+BETTER TREE FOUND at iteration 250: -1068.883
+Iteration 250 / LogL: -1068.883 / Time: 0h:6m:20s (0h:2m:32s left)
+Iteration 260 / LogL: -1068.884 / Time: 0h:6m:21s (0h:2m:12s left)
+Iteration 270 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:53s left)
+BETTER TREE FOUND at iteration 278: -1068.883
+Iteration 280 / LogL: -1068.883 / Time: 0h:6m:21s (0h:2m:13s left)
+BETTER TREE FOUND at iteration 281: -1068.883
+Iteration 290 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:59s left)
+Iteration 300 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:43s left)
+Iteration 310 / LogL: -1068.883 / Time: 0h:6m:21s (0h:1m:27s left)
+BETTER TREE FOUND at iteration 317: -1068.883
+Iteration 320 / LogL: -1070.919 / Time: 0h:6m:21s (0h:1m:55s left)
+Iteration 330 / LogL: -1068.883 / Time: 0h:6m:21s (0h:1m:40s left)
+Iteration 340 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:26s left)
+BETTER TREE FOUND at iteration 343: -1068.883
+Iteration 350 / LogL: -1068.883 / Time: 0h:6m:21s (0h:1m:41s left)
+Iteration 360 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:28s left)
+Iteration 370 / LogL: -1068.883 / Time: 0h:6m:21s (0h:1m:15s left)
+Iteration 380 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:3s left)
+Iteration 390 / LogL: -1068.884 / Time: 0h:6m:21s (0h:0m:51s left)
+Iteration 400 / LogL: -1068.884 / Time: 0h:6m:21s (0h:0m:41s left)
+Iteration 410 / LogL: -1068.884 / Time: 0h:6m:21s (0h:0m:30s left)
+Iteration 420 / LogL: -1068.884 / Time: 0h:6m:21s (0h:0m:20s left)
+Iteration 430 / LogL: -1068.883 / Time: 0h:6m:21s (0h:0m:11s left)
+BETTER TREE FOUND at iteration 437: -1068.883
+Iteration 440 / LogL: -1068.884 / Time: 0h:6m:21s (0h:1m:24s left)
+Iteration 450 / LogL: -1068.883 / Time: 0h:6m:22s (0h:1m:14s left)
+Iteration 460 / LogL: -1068.884 / Time: 0h:6m:22s (0h:1m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -1068.883
+Iteration 470 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:54s left)
+Iteration 480 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:45s left)
+BETTER TREE FOUND at iteration 481: -1068.883
+BETTER TREE FOUND at iteration 489: -1068.883
+Iteration 490 / LogL: -1068.883 / Time: 0h:6m:22s (0h:1m:17s left)
+Iteration 500 / LogL: -1068.883 / Time: 0h:6m:22s (0h:1m:8s left)
+Iteration 510 / LogL: -1068.884 / Time: 0h:6m:22s (0h:0m:59s left)
+Iteration 520 / LogL: -1068.884 / Time: 0h:6m:22s (0h:0m:50s left)
+BETTER TREE FOUND at iteration 529: -1068.883
+Iteration 530 / LogL: -1068.883 / Time: 0h:6m:22s (0h:1m:11s left)
+Iteration 540 / LogL: -1068.883 / Time: 0h:6m:22s (0h:1m:3s left)
+Iteration 550 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:55s left)
+Iteration 560 / LogL: -1068.884 / Time: 0h:6m:22s (0h:0m:47s left)
+Iteration 570 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:39s left)
+Iteration 580 / LogL: -1068.884 / Time: 0h:6m:22s (0h:0m:32s left)
+Iteration 590 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:25s left)
+Iteration 600 / LogL: -1068.883 / Time: 0h:6m:22s (0h:0m:18s left)
+Iteration 610 / LogL: -1070.919 / Time: 0h:6m:22s (0h:0m:11s left)
+Iteration 620 / LogL: -1068.883 / Time: 0h:6m:23s (0h:0m:5s left)
+Iteration 630 / LogL: -1068.883 / Time: 0h:6m:23s (0h:0m:-1s left)
+TREE SEARCH COMPLETED AFTER 630 ITERATIONS / Time: 0h:6m:23s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1068.883
+Optimal log-likelihood: -1068.883
+Rate parameters:  A-C: 4.31245  A-G: 11.08286  A-T: 3.25880  C-G: 9.27373  C-T: 10.84176  G-T: 1.00000
+Base frequencies:  A: 0.244  C: 0.201  G: 0.190  T: 0.364
+Proportion of invariable sites: 0.431
+Gamma shape alpha: 99.835
+Parameters optimization took 1 rounds (0.001 sec)
+BEST SCORE FOUND : -1068.883
+Total tree length: 0.129
+
+Total number of iterations: 630
+CPU time used for tree search: 3.085 sec (0h:0m:3s)
+Wall-clock time used for tree search: 3.550 sec (0h:0m:3s)
+Total CPU time used: 591.015 sec (0h:9m:51s)
+Total wall-clock time used: 383.096 sec (0h:6m:23s)
+
+Analysis results written to: 
+  IQ-TREE report:                precompute/27/27_infer.iqtree
+  Maximum-likelihood tree:       precompute/27/27_infer.treefile
+  Screen log file:               precompute/27/27_infer.log
+
+Date and Time: Tue May  5 02:27:54 2026

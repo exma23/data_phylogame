@@ -1,0 +1,96 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD Eng Sample: 100-000000425_37/24_N, 64 cores, 503 GB RAM
+
+RAxML-NG was called at 05-May-2026 01:09:32 as follows:
+
+raxml-ng --search --msa /root/final_thesis/data/dna/test/13/data.phy --tree /root/final_thesis/data/dna/test/13/start.newick --model GTR{1.49948/1.38267/1.59581/0.89174/2.93891/1.00000}+I{0.188}+G{0.467}+F{0.23754/0.28946/0.27868/0.19432} --prefix precompute/13/13_infer --threads auto --seed 42 --force perf_threads
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): user
+  random seed: 42
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  logLH epsilon: general: 10.000000, brlen-triplet: 1000.000000
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  fast CLV updates: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: /root/final_thesis/data/dna/test/13/data.phy
+[00:00:00] Loaded alignment with 12 taxa and 1171 sites
+
+Alignment comprises 1 partitions and 297 patterns
+
+Partition 0: noname
+Model: GTR{1.49948/1.38267/1.59581/0.89174/2.93891/1}+FU{0.23754/0.28946/0.27868/0.19432}+IU{0.188}+G4m{0.467}
+Alignment sites / patterns: 1171 / 297
+Gaps: 43.92 %
+Invariant sites: 72.67 %
+
+
+NOTE: Binary MSA file created: precompute/13/13_infer.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 5 thread(s)
+
+[00:00:00] Loading user starting tree(s) from: /root/final_thesis/data/dna/test/13/start.newick
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 60 / 960
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00 -4141.859246] Initial branch length optimization
+[00:00:00 -3845.734401] Model parameter optimization (eps = 10.000000)
+[00:00:00 -3845.557333] AUTODETECT spr round 1 (radius: 5)
+[00:00:00 -3627.920988] AUTODETECT spr round 2 (radius: 10)
+[00:00:00 -3627.291112] SPR radius for FAST iterations: 10 (autodetect)
+[00:00:00 -3627.291112] Model parameter optimization (eps = 3.000000)
+[00:00:00 -3627.139615] FAST spr round 1 (radius: 10)
+[00:00:00 -3623.203153] Model parameter optimization (eps = 1.000000)
+[00:00:00 -3623.202720] SLOW spr round 1 (radius: 5)
+[00:00:00 -3623.202448] SLOW spr round 2 (radius: 10)
+[00:00:00 -3623.202365] Model parameter optimization (eps = 0.100000)
+
+[00:00:00] ML tree search #1, logLikelihood: -3623.202348
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.467000 (user),  weights&rates: (0.250000,0.027447) (0.250000,0.229827) (0.250000,0.794688) (0.250000,2.948038) 
+   P-inv (user): 0.188000
+   Base frequencies (user): 0.237540 0.289460 0.278680 0.194320 
+   Substitution rates (user): 1.499480 1.382670 1.595810 0.891740 2.938910 1.000000 
+
+
+Final LogLikelihood: -3623.202348
+
+AIC score: 7288.404696 / AICc score: 7289.208874 / BIC score: 7394.782577
+Free parameters (model + branch lengths): 21
+
+WARNING: Best ML tree contains 1 near-zero branches!
+
+Best ML tree with collapsed near-zero branches saved to: /root/final_thesis/precompute/13/13_infer.raxml.bestTreeCollapsed
+Best ML tree saved to: /root/final_thesis/precompute/13/13_infer.raxml.bestTree
+Optimized model saved to: /root/final_thesis/precompute/13/13_infer.raxml.bestModel
+
+Execution log saved to: /root/final_thesis/precompute/13/13_infer.raxml.log
+
+Analysis started: 05-May-2026 01:09:32 / finished: 05-May-2026 01:09:32
+
+Elapsed time: 0.070 seconds
+

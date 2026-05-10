@@ -1,0 +1,95 @@
+
+RAxML-NG v. 1.2.2 released on 11.04.2024 by The Exelixis Lab.
+Developed by: Alexey M. Kozlov and Alexandros Stamatakis.
+Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Bettisworth, Julia Haag, Anastasis Togkousidis.
+Latest version: https://github.com/amkozlov/raxml-ng
+Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
+
+System: AMD Eng Sample: 100-000000425_37/24_N, 64 cores, 503 GB RAM
+
+RAxML-NG was called at 05-May-2026 01:59:26 as follows:
+
+raxml-ng --search --msa /root/final_thesis/data/dna/test/22/data.phy --tree /root/final_thesis/data/dna/test/22/start.newick --model GTR{0.81586/1.96693/0.85487/0.83506/7.32246/1.00000}+I{0.511}+G{1.147}+F{0.26175/0.19608/0.29551/0.24667} --prefix precompute/22/22_infer --threads auto --seed 42 --force perf_threads
+
+Analysis options:
+  run mode: ML tree search
+  start tree(s): user
+  random seed: 42
+  tip-inner: OFF
+  pattern compression: ON
+  per-rate scalers: OFF
+  site repeats: ON
+  logLH epsilon: general: 10.000000, brlen-triplet: 1000.000000
+  fast spr radius: AUTO
+  spr subtree cutoff: 1.000000
+  fast CLV updates: ON
+  branch lengths: proportional (ML estimate, algorithm: NR-FAST)
+  SIMD kernels: AVX2
+  parallelization: coarse-grained (auto), PTHREADS (auto)
+
+WARNING: Running in FORCE mode: some safety checks are disabled!
+
+[00:00:00] Reading alignment from file: /root/final_thesis/data/dna/test/22/data.phy
+[00:00:00] Loaded alignment with 15 taxa and 537 sites
+
+Alignment comprises 1 partitions and 192 patterns
+
+Partition 0: noname
+Model: GTR{0.81586/1.96693/0.85487/0.83506/7.32246/1}+FU{0.26175/0.19608/0.29551/0.24667}+IU{0.511}+G4m{1.147}
+Alignment sites / patterns: 537 / 192
+Gaps: 3.22 %
+Invariant sites: 66.67 %
+
+
+NOTE: Binary MSA file created: precompute/22/22_infer.raxml.rba
+
+Parallelization scheme autoconfig: 1 worker(s) x 3 thread(s)
+
+[00:00:00] Loading user starting tree(s) from: /root/final_thesis/data/dna/test/22/start.newick
+Parallel reduction/worker buffer size: 1 KB  / 0 KB
+
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 64 / 1024
+[00:00:00] Data distribution: max. searches per worker: 1
+
+Starting ML tree search with 1 distinct starting trees
+
+[00:00:00 -3090.061043] Initial branch length optimization
+[00:00:00 -2892.074388] Model parameter optimization (eps = 10.000000)
+[00:00:00 -2891.900111] AUTODETECT spr round 1 (radius: 5)
+[00:00:00 -2621.977187] AUTODETECT spr round 2 (radius: 10)
+[00:00:00 -2620.816302] AUTODETECT spr round 3 (radius: 15)
+[00:00:00 -2620.665834] SPR radius for FAST iterations: 15 (autodetect)
+[00:00:00 -2620.665834] Model parameter optimization (eps = 3.000000)
+[00:00:00 -2620.650558] FAST spr round 1 (radius: 15)
+[00:00:00 -2611.177501] Model parameter optimization (eps = 1.000000)
+[00:00:00 -2611.176913] SLOW spr round 1 (radius: 5)
+[00:00:00 -2609.541235] SLOW spr round 2 (radius: 10)
+[00:00:00 -2609.536008] SLOW spr round 3 (radius: 15)
+[00:00:00 -2609.535962] Model parameter optimization (eps = 0.100000)
+
+[00:00:00] ML tree search #1, logLikelihood: -2609.535961
+
+
+Optimized model parameters:
+
+   Partition 0: noname
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 1.147000 (user),  weights&rates: (0.250000,0.165317) (0.250000,0.516878) (0.250000,1.020648) (0.250000,2.297157) 
+   P-inv (user): 0.511000
+   Base frequencies (user): 0.261747 0.196078 0.295507 0.246668 
+   Substitution rates (user): 0.815860 1.966930 0.854870 0.835060 7.322460 1.000000 
+
+
+Final LogLikelihood: -2609.535961
+
+AIC score: 5273.071923 / AICc score: 5276.042453 / BIC score: 5388.793872
+Free parameters (model + branch lengths): 27
+
+Best ML tree saved to: /root/final_thesis/precompute/22/22_infer.raxml.bestTree
+Optimized model saved to: /root/final_thesis/precompute/22/22_infer.raxml.bestModel
+
+Execution log saved to: /root/final_thesis/precompute/22/22_infer.raxml.log
+
+Analysis started: 05-May-2026 01:59:26 / finished: 05-May-2026 01:59:26
+
+Elapsed time: 0.089 seconds
+

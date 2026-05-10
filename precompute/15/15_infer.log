@@ -1,0 +1,189 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    3b61efb33633 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree3 -s /root/final_thesis/data/dna/test/15/data.phy -t /root/final_thesis/data/dna/test/15/start.newick -m GTR{1.33615,3.06681,0.90570,0.40641,2.58240}+F{0.29390,0.18950,0.18603,0.33056}+I{0.032}+G4{0.312} --prefix precompute/15/15_infer --threads auto --redo
+Seed:    567507 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May  5 01:14:23 2026
+Kernel:  AVX+FMA - auto-detect threads (128 CPU cores detected)
+
+Reading alignment file /root/final_thesis/data/dna/test/15/data.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.0120891 secs using 5910% CPU
+Alignment has 12 sequences with 1681 columns, 92 distinct patterns
+58 parsimony-informative, 66 singleton sites, 1557 constant sites
+       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00615471 secs using 1.254e+04% CPU
+   1  Sp000   15.70%    passed     88.89%
+   2  Sp001    6.84%    passed     49.06%
+   3  Sp002    0.71%    passed     99.19%
+   4  Sp003    0.89%    passed     99.65%
+   5  Sp004    0.71%    passed     99.19%
+   6  Sp005    0.71%    passed     98.60%
+   7  Sp006    0.89%    passed     99.16%
+   8  Sp007    0.71%    passed     98.98%
+   9  Sp008    0.71%    passed     99.00%
+  10  Sp009    0.71%    passed     99.51%
+  11  Sp010    0.95%    passed     99.53%
+  12  Sp011    0.95%    passed     99.40%
+****  TOTAL    2.54%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.0036359 secs using 1.365e+04% CPU
+Reading input tree file /root/final_thesis/data/dna/test/15/start.newick ...
+WARNING: Normalizing State frequencies so that sum of them equals to 1
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 128 CPU cores
+Increase to 10 rounds for branch lengths
+170033 trees examined
+Threads: 1 / Time: 128.000 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -3320
+Threads: 2 / Time: 221.525 sec / Speedup: 0.578 / Efficiency: 29% / LogL: -3320
+Determining AUTO threadcount: done in 349.526 secs using 152.8% CPU
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -4327.112
+2. Current log-likelihood: -3444.212
+3. Current log-likelihood: -3437.776
+Optimal log-likelihood: -3437.776
+Rate parameters:  A-C: 1.33615  A-G: 3.06681  A-T: 0.90570  C-G: 0.40641  C-T: 2.58240  G-T: 1.00000
+Base frequencies:  A: 0.294  C: 0.190  G: 0.186  T: 0.331
+Proportion of invariable sites: 0.032
+Gamma shape alpha: 0.312
+Parameters optimization took 3 rounds (0.002 sec)
+Wrote distance file to... 
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3108.589
+Finish initializing candidate tree set (2)
+Current best tree score: -3108.589 / CPU time: 0.014
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+BETTER TREE FOUND at iteration 8: -3108.589
+BETTER TREE FOUND at iteration 10: -3108.588
+Iteration 10 / LogL: -3108.588 / Time: 0h:5m:49s
+Iteration 20 / LogL: -3108.589 / Time: 0h:5m:49s
+BETTER TREE FOUND at iteration 28: -3108.588
+Iteration 30 / LogL: -3108.589 / Time: 0h:5m:49s (0h:19m:41s left)
+BETTER TREE FOUND at iteration 37: -3108.588
+Iteration 40 / LogL: -3108.588 / Time: 0h:5m:49s (0h:14m:29s left)
+BETTER TREE FOUND at iteration 43: -3108.587
+BETTER TREE FOUND at iteration 44: -3108.587
+BETTER TREE FOUND at iteration 45: -3108.587
+Iteration 50 / LogL: -3108.587 / Time: 0h:5m:49s (0h:11m:18s left)
+BETTER TREE FOUND at iteration 60: -3108.587
+Iteration 60 / LogL: -3108.587 / Time: 0h:5m:49s (0h:9m:52s left)
+BETTER TREE FOUND at iteration 61: -3108.587
+Iteration 70 / LogL: -3108.588 / Time: 0h:5m:49s (0h:7m:41s left)
+Iteration 80 / LogL: -3108.587 / Time: 0h:5m:49s (0h:5m:58s left)
+BETTER TREE FOUND at iteration 88: -3108.587
+Iteration 90 / LogL: -3108.587 / Time: 0h:5m:49s (0h:6m:25s left)
+Iteration 100 / LogL: -3108.587 / Time: 0h:5m:50s (0h:5m:11s left)
+Iteration 110 / LogL: -3108.587 / Time: 0h:5m:50s (0h:4m:10s left)
+Iteration 120 / LogL: -3108.587 / Time: 0h:5m:50s (0h:3m:19s left)
+BETTER TREE FOUND at iteration 124: -3108.587
+Iteration 130 / LogL: -3108.587 / Time: 0h:5m:50s (0h:4m:15s left)
+BETTER TREE FOUND at iteration 132: -3108.587
+Iteration 140 / LogL: -3108.587 / Time: 0h:5m:50s (0h:3m:51s left)
+BETTER TREE FOUND at iteration 148: -3108.587
+Iteration 150 / LogL: -3108.587 / Time: 0h:5m:50s (0h:3m:50s left)
+Iteration 160 / LogL: -3108.589 / Time: 0h:5m:50s (0h:3m:13s left)
+BETTER TREE FOUND at iteration 163: -3108.587
+BETTER TREE FOUND at iteration 166: -3108.587
+Iteration 170 / LogL: -3108.587 / Time: 0h:5m:50s (0h:3m:18s left)
+Iteration 180 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:48s left)
+BETTER TREE FOUND at iteration 187: -3108.587
+Iteration 190 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:59s left)
+BETTER TREE FOUND at iteration 193: -3108.587
+Iteration 200 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:43s left)
+Iteration 210 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:19s left)
+UPDATE BEST LOG-LIKELIHOOD: -3108.587
+BETTER TREE FOUND at iteration 217: -3108.587
+Iteration 220 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:35s left)
+Iteration 230 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:13s left)
+Iteration 240 / LogL: -3112.673 / Time: 0h:5m:50s (0h:1m:52s left)
+Iteration 250 / LogL: -3121.464 / Time: 0h:5m:50s (0h:1m:34s left)
+BETTER TREE FOUND at iteration 253: -3108.587
+BETTER TREE FOUND at iteration 255: -3108.587
+Iteration 260 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:8s left)
+BETTER TREE FOUND at iteration 268: -3108.587
+Iteration 270 / LogL: -3108.587 / Time: 0h:5m:50s (0h:2m:7s left)
+BETTER TREE FOUND at iteration 271: -3108.587
+Iteration 280 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:54s left)
+UPDATE BEST LOG-LIKELIHOOD: -3108.587
+BETTER TREE FOUND at iteration 284: -3108.587
+Iteration 290 / LogL: -3121.463 / Time: 0h:5m:50s (0h:1m:53s left)
+Iteration 300 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:38s left)
+Iteration 310 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:23s left)
+Iteration 320 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:10s left)
+Iteration 330 / LogL: -3108.588 / Time: 0h:5m:50s (0h:0m:57s left)
+BETTER TREE FOUND at iteration 338: -3108.587
+Iteration 340 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:41s left)
+Iteration 350 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:28s left)
+Iteration 360 / LogL: -3108.588 / Time: 0h:5m:50s (0h:1m:16s left)
+BETTER TREE FOUND at iteration 366: -3108.587
+Iteration 370 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:31s left)
+BETTER TREE FOUND at iteration 373: -3108.587
+Iteration 380 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:26s left)
+Iteration 390 / LogL: -3108.588 / Time: 0h:5m:50s (0h:1m:14s left)
+Iteration 400 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -3108.587
+BETTER TREE FOUND at iteration 405: -3108.587
+Iteration 410 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:21s left)
+Iteration 420 / LogL: -3108.587 / Time: 0h:5m:50s (0h:1m:11s left)
+Iteration 430 / LogL: -3108.587 / Time: 0h:5m:51s (0h:1m:1s left)
+Iteration 440 / LogL: -3108.588 / Time: 0h:5m:51s (0h:0m:51s left)
+UPDATE BEST LOG-LIKELIHOOD: -3108.587
+Iteration 450 / LogL: -3121.463 / Time: 0h:5m:51s (0h:0m:42s left)
+Iteration 460 / LogL: -3108.587 / Time: 0h:5m:51s (0h:0m:34s left)
+BETTER TREE FOUND at iteration 462: -3108.587
+BETTER TREE FOUND at iteration 463: -3108.587
+Iteration 470 / LogL: -3108.587 / Time: 0h:5m:51s (0h:1m:9s left)
+Iteration 480 / LogL: -3108.587 / Time: 0h:5m:51s (0h:1m:0s left)
+Iteration 490 / LogL: -3108.587 / Time: 0h:5m:51s (0h:0m:52s left)
+BETTER TREE FOUND at iteration 493: -3108.586
+Iteration 500 / LogL: -3108.586 / Time: 0h:5m:51s (0h:1m:5s left)
+BETTER TREE FOUND at iteration 506: -3108.586
+Iteration 510 / LogL: -3108.587 / Time: 0h:5m:51s (0h:1m:6s left)
+Iteration 520 / LogL: -3108.586 / Time: 0h:5m:51s (0h:0m:58s left)
+Iteration 530 / LogL: -3108.587 / Time: 0h:5m:51s (0h:0m:50s left)
+Iteration 540 / LogL: -3108.586 / Time: 0h:5m:51s (0h:0m:43s left)
+Iteration 550 / LogL: -3108.586 / Time: 0h:5m:51s (0h:0m:35s left)
+Iteration 560 / LogL: -3108.587 / Time: 0h:5m:51s (0h:0m:28s left)
+Iteration 570 / LogL: -3108.587 / Time: 0h:5m:51s (0h:0m:22s left)
+Iteration 580 / LogL: -3108.586 / Time: 0h:5m:51s (0h:0m:15s left)
+Iteration 590 / LogL: -3108.586 / Time: 0h:5m:51s (0h:0m:9s left)
+Iteration 600 / LogL: -3121.462 / Time: 0h:5m:51s (0h:0m:3s left)
+TREE SEARCH COMPLETED AFTER 607 ITERATIONS / Time: 0h:5m:51s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3108.586
+Optimal log-likelihood: -3108.586
+Rate parameters:  A-C: 1.33615  A-G: 3.06681  A-T: 0.90570  C-G: 0.40641  C-T: 2.58240  G-T: 1.00000
+Base frequencies:  A: 0.294  C: 0.190  G: 0.186  T: 0.331
+Proportion of invariable sites: 0.032
+Gamma shape alpha: 0.312
+Parameters optimization took 1 rounds (0.001 sec)
+BEST SCORE FOUND : -3108.586
+Total tree length: 0.091
+
+Total number of iterations: 607
+CPU time used for tree search: 1.770 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.954 sec (0h:0m:1s)
+Total CPU time used: 537.666 sec (0h:8m:57s)
+Total wall-clock time used: 351.600 sec (0h:5m:51s)
+
+Analysis results written to: 
+  IQ-TREE report:                precompute/15/15_infer.iqtree
+  Maximum-likelihood tree:       precompute/15/15_infer.treefile
+  Screen log file:               precompute/15/15_infer.log
+
+Date and Time: Tue May  5 01:20:15 2026

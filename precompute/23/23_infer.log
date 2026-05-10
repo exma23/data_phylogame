@@ -1,0 +1,119 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    3b61efb33633 (AVX2, FMA3, 503 GB RAM)
+Command: iqtree3 -s /root/final_thesis/data/dna/test/23/data.phy -t /root/final_thesis/data/dna/test/23/start.newick -m GTR{0.90613,2.81723,1.35232,0.59356,3.84154}+F{0.27949,0.20341,0.21035,0.30674}+I{0.000}+G4{0.297} --prefix precompute/23/23_infer --threads auto --redo
+Seed:    715509 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue May  5 01:59:26 2026
+Kernel:  AVX+FMA - auto-detect threads (128 CPU cores detected)
+
+Reading alignment file /root/final_thesis/data/dna/test/23/data.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00525482 secs using 1.093e+04% CPU
+Alignment has 15 sequences with 542 columns, 216 distinct patterns
+112 parsimony-informative, 48 singleton sites, 382 constant sites
+       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0950149 secs using 949.5% CPU
+   1  Sp000    4.80%    passed     88.93%
+   2  Sp001    8.67%    passed     71.42%
+   3  Sp002   42.25%    passed     86.32%
+   4  Sp003   28.97%    passed     97.04%
+   5  Sp004    9.23%    passed     99.77%
+   6  Sp005    4.80%    passed     69.86%
+   7  Sp006    6.64%    passed     79.35%
+   8  Sp007    4.80%    passed     69.86%
+   9  Sp008    5.35%    passed     90.58%
+  10  Sp009    5.35%    passed     90.58%
+  11  Sp010    5.35%    passed     90.58%
+  12  Sp011    5.35%    passed     90.58%
+  13  Sp012    4.80%    passed     88.61%
+  14  Sp013   13.10%    passed     83.18%
+  15  Sp014   12.73%    passed     78.11%
+****  TOTAL   10.81%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Sp010 is identical to Sp008 but kept for subsequent analysis
+NOTE: Sp011 is identical to Sp009 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.0985504 secs using 964% CPU
+Reading input tree file /root/final_thesis/data/dna/test/23/start.newick ...
+WARNING: Normalizing State frequencies so that sum of them equals to 1
+
+NOTE: 0 MB RAM (0 GB) is required!
+Measuring multi-threading efficiency up to 128 CPU cores
+Increase to 10 rounds for branch lengths
+28349 trees examined
+Threads: 1 / Time: 128.005 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -2443
+Threads: 2 / Time: 202.655 sec / Speedup: 0.632 / Efficiency: 32% / LogL: -2443
+Determining AUTO threadcount: done in 330.661 secs using 153.8% CPU
+BEST NUMBER OF THREADS: 1
+
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2812.965
+2. Current log-likelihood: -2498.861
+3. Current log-likelihood: -2479.398
+4. Current log-likelihood: -2479.207
+Optimal log-likelihood: -2479.204
+Rate parameters:  A-C: 0.90613  A-G: 2.81723  A-T: 1.35232  C-G: 0.59356  C-T: 3.84154  G-T: 1.00000
+Base frequencies:  A: 0.279  C: 0.203  G: 0.210  T: 0.307
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 0.297
+Parameters optimization took 4 rounds (0.005 sec)
+Wrote distance file to... 
+
+Do NNI search on 1 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1897.854
+Finish initializing candidate tree set (2)
+Current best tree score: -1897.854 / CPU time: 0.036
+Number of iterations: 1
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 10 / LogL: -1897.856 / Time: 0h:5m:30s
+Iteration 20 / LogL: -1898.149 / Time: 0h:5m:30s
+Iteration 30 / LogL: -1897.859 / Time: 0h:5m:31s (0h:13m:30s left)
+Iteration 40 / LogL: -1897.855 / Time: 0h:5m:31s (0h:8m:37s left)
+BETTER TREE FOUND at iteration 47: -1897.854
+Iteration 50 / LogL: -1897.858 / Time: 0h:5m:31s (0h:10m:55s left)
+Iteration 60 / LogL: -1897.871 / Time: 0h:5m:31s (0h:8m:8s left)
+BETTER TREE FOUND at iteration 61: -1897.854
+Iteration 70 / LogL: -1897.927 / Time: 0h:5m:31s (0h:7m:17s left)
+Iteration 80 / LogL: -1897.858 / Time: 0h:5m:31s (0h:5m:40s left)
+UPDATE BEST LOG-LIKELIHOOD: -1897.854
+Iteration 90 / LogL: -1897.863 / Time: 0h:5m:31s (0h:4m:24s left)
+Iteration 100 / LogL: -1897.861 / Time: 0h:5m:31s (0h:3m:24s left)
+Iteration 110 / LogL: -1897.863 / Time: 0h:5m:31s (0h:2m:35s left)
+Iteration 120 / LogL: -1898.113 / Time: 0h:5m:32s (0h:1m:54s left)
+Iteration 130 / LogL: -1897.868 / Time: 0h:5m:32s (0h:1m:19s left)
+Iteration 140 / LogL: -1897.857 / Time: 0h:5m:32s (0h:0m:50s left)
+Iteration 150 / LogL: -1897.867 / Time: 0h:5m:32s (0h:0m:24s left)
+Iteration 160 / LogL: -1897.856 / Time: 0h:5m:32s (0h:0m:2s left)
+TREE SEARCH COMPLETED AFTER 162 ITERATIONS / Time: 0h:5m:32s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1897.854
+Optimal log-likelihood: -1897.854
+Rate parameters:  A-C: 0.90613  A-G: 2.81723  A-T: 1.35232  C-G: 0.59356  C-T: 3.84154  G-T: 1.00000
+Base frequencies:  A: 0.279  C: 0.203  G: 0.210  T: 0.307
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 0.297
+Parameters optimization took 1 rounds (0.001 sec)
+BEST SCORE FOUND : -1897.854
+Total tree length: 0.643
+
+Total number of iterations: 162
+CPU time used for tree search: 1.749 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.885 sec (0h:0m:1s)
+Total CPU time used: 511.401 sec (0h:8m:31s)
+Total wall-clock time used: 332.566 sec (0h:5m:32s)
+
+Analysis results written to: 
+  IQ-TREE report:                precompute/23/23_infer.iqtree
+  Maximum-likelihood tree:       precompute/23/23_infer.treefile
+  Screen log file:               precompute/23/23_infer.log
+
+Date and Time: Tue May  5 02:04:59 2026
