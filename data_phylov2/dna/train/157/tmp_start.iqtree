@@ -1,0 +1,33 @@
+IQ-TREE compatible stats generated from PhyML stats
+
+Input file name: data.phy
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 0.79279
+  A-G: 0.67433
+  A-T: 0.80752
+  C-G: 1.16629
+  C-T: 2.03679
+  G-T: 1.00000
+
+State frequencies:
+
+  pi(A) = 0.33203
+  pi(C) = 0.16988
+  pi(G) = 0.19435
+  pi(T) = 0.30374
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.217
+Gamma shape alpha: 0.562
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2217.83657
