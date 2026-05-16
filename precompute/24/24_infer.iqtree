@@ -1,9 +1,9 @@
 IQ-TREE 3.1.1 built Apr  8 2026
 
-Input file name: /root/final_thesis/data/dna/test/24/data.phy
-User tree file name: /root/final_thesis/data/dna/test/24/start.newick
+Input file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/24/data.phy
+User tree file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/24/start.newick
 Type of analysis: tree reconstruction
-Random seed number: 864029
+Random seed number: 200098
 
 REFERENCES
 ----------
@@ -20,11 +20,11 @@ SEQUENCE ALIGNMENT
 ------------------
 
 NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
-Input data: 15 sequences with 535 nucleotide sites
-Number of constant sites: 343 (= 64.1121% of all sites)
-Number of invariant (constant or ambiguous constant) sites: 343 (= 64.1121% of all sites)
-Number of parsimony informative sites: 122
-Number of distinct site patterns: 212
+Input data: 15 sequences with 542 nucleotide sites
+Number of constant sites: 382 (= 70.4797% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 382 (= 70.4797% of all sites)
+Number of parsimony informative sites: 112
+Number of distinct site patterns: 216
 
 SUBSTITUTION PROCESS
 --------------------
@@ -33,108 +33,110 @@ Model of substitution: GTR+FU+I+G4
 
 Rate parameter R:
 
-  A-C: 0.8527
-  A-G: 1.9736
-  A-T: 0.7136
-  C-G: 1.3620
-  C-T: 6.4248
+  A-C: 0.9061
+  A-G: 2.8172
+  A-T: 1.3523
+  C-G: 0.5936
+  C-T: 3.8415
   G-T: 1.0000
 
 State frequencies: (user-defined)
 
-  pi(A) = 0.2378
-  pi(C) = 0.2522
-  pi(G) = 0.3224
-  pi(T) = 0.1877
+  pi(A) = 0.2795
+  pi(C) = 0.2034
+  pi(G) = 0.2104
+  pi(T) = 0.3067
 
 Rate matrix Q:
 
-  A   -0.6942    0.1515    0.4483   0.09437
-  C    0.1429    -1.302    0.3094    0.8496
-  G    0.3307    0.2421    -0.705    0.1322
-  T    0.1196     1.142    0.2272    -1.489
+  A   -0.8992    0.1391    0.4471     0.313
+  C    0.1911    -1.174    0.0942    0.8891
+  G    0.5941    0.0911   -0.9166    0.2314
+  T    0.2852    0.5896    0.1587    -1.033
 
 Model of rate heterogeneity: Invar+Gamma with 4 categories
-Proportion of invariable sites: 0.227
-Gamma shape alpha: 0.531
+Proportion of invariable sites: 0
+Gamma shape alpha: 0.297
 
  Category  Relative_rate  Proportion
-  0         0              0.227
-  1         0.0508         0.1933
-  2         0.3515         0.1933
-  3         1.089          0.1933
-  4         3.684          0.1933
+  1         0.005055       0.25
+  2         0.1022         0.25
+  3         0.5907         0.25
+  4         3.302          0.25
 Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
 
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -2637.3555 (s.e. 116.1443)
-Unconstrained log-likelihood (without tree): -2117.1707
+Log-likelihood of the tree: -1897.8492 (s.e. 71.2938)
+Unconstrained log-likelihood (without tree): -2361.2623
 Number of free parameters (#branches + #model parameters): 27
-Akaike information criterion (AIC) score: 5328.7109
-Corrected Akaike information criterion (AICc) score: 5331.6932
-Bayesian information criterion (BIC) score: 5444.3321
+Akaike information criterion (AIC) score: 3849.6984
+Corrected Akaike information criterion (AICc) score: 3852.6400
+Bayesian information criterion (BIC) score: 3965.6705
 
-Total tree length (sum of branch lengths): 1.1077
-Sum of internal branch lengths: 0.3619 (32.6706% of tree length)
+Total tree length (sum of branch lengths): 0.6426
+Sum of internal branch lengths: 0.3356 (52.2272% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0018) should be treated with caution
+         Such branches are denoted by '**' in the figure below
 
 NOTE: Tree is UNROOTED although outgroup taxon 'Sp000' is drawn at root
 
-+--Sp000
-| (N16)
-+--Sp001
++---------------Sp000
 |
-|                   +-------Sp002
-|            +------| (N11)
-|            |      |   +-----Sp007
-|            |      +---| (N2)
-|            |          +------------Sp008
-|         +--| (N8)
-|         |  |                    +--------Sp003
-|         |  |  +-----------------| (N23)
-|         |  |  |                 +--------------Sp004
-|         |  +--|
-|         |     |      +-----Sp013
-|         |     +------| (N6)
-|         |            +--------Sp014
-|      +--| (N18)
-|      |  |     +------------------------Sp005
-|      |  |  +--| (N15)
-|      |  |  |  +---Sp009
-|      |  +--| (N19)
-|      |     +-----Sp010
-|   +--| (N7)
-|   |  +--------Sp006
-+---| (N21)
-    |                   +--Sp011
-    +-------------------| (N3)
-                        +----------------------------------Sp012
+|                 +-----------Sp001
+|              +--|
+|              |  +--------Sp002
++--------------|
+|              |                     +--Sp003
+|              |                  +--|
+|              |                  |  +**Sp005
+|              |               +--|
+|              |               |  +--Sp007
+|              |     +---------|
+|              |     |         +--Sp012
+|              |  +--|
+|              |  |  |  +------Sp006
+|              |  |  +--|
+|              |  |     |                                  +--Sp013
+|              |  |     +----------------------------------|
+|              |  |                                        +**Sp014
+|              +--|
+|                 +----------------Sp004
+|
+|     +**Sp008
+|  +--|
+|  |  +**Sp010
++--|
+   |  +**Sp009
+   +**|
+      +**Sp011
 
 Tree in newick format:
 
-(Sp000:0.0022793271,Sp001:0.0060776200,(((((Sp002:0.0400078923,(Sp007:0.0305987836,Sp008:0.0641361465)N2:0.0221444272)N11:0.0357571104,((Sp003:0.0444794388,Sp004:0.0764334579)N23:0.0908865827,(Sp013:0.0304266258,Sp014:0.0453013509)N6:0.0354083145):0.0102678683)N8:0.0108579535,((Sp005:0.1233763018,Sp009:0.0235325329)N15:0.0070523212,Sp010:0.0299154139)N19:0.0103108061)N18:0.0045357029,Sp006:0.0470231387)N7:0.0122855805,(Sp011:0.0105564132,Sp012:0.1716630139)N3:0.0988139006)N21:0.0235717160)N16;
+(Sp000:0.0746275675,((Sp001:0.0557521697,Sp002:0.0447658951):0.0062205714,(((((Sp003:0.0027696867,Sp005:0.0000010000):0.0020379731,Sp007:0.0020154193):0.0041643087,Sp012:0.0019777142):0.0491180376,(Sp006:0.0325174685,(Sp013:0.0095079347,Sp014:0.0000748794):0.1596668653):0.0138388926):0.0128474752,Sp004:0.0809766842):0.0058575631):0.0694818260,((Sp008:0.0000010000,Sp010:0.0000010000):0.0020117256,(Sp009:0.0000010000,Sp011:0.0000010000):0.0000010000):0.0123956043);
 
 ALISIM COMMAND
 --------------
 To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
 
---alisim simulated_MSA -t precompute/24/24_infer.treefile -m "GTR{0.85272,1.97364,0.7136,1.36202,6.42475}+FU{0.23778,0.2522,0.32236,0.18766}+I{0.227}+G4{0.531}" --length 535
+--alisim simulated_MSA -t /home/ha/Code/final_thesis/data_phylov2/precompute/24/24_infer.treefile -m "GTR{0.90613,2.81723,1.35232,0.59356,3.84154}+FU{0.279493,0.203412,0.210352,0.306743}+I{0}+G4{0.297}" --length 542
 
 To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
 
-iqtree -s /root/final_thesis/data/dna/test/24/data.phy --alisim mimicked_MSA
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/24/data.phy --alisim mimicked_MSA
 
 To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
 
-iqtree -s /root/final_thesis/data/dna/test/24/data.phy --alisim mimicked_MSA --num-alignments 100
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/24/data.phy --alisim mimicked_MSA --num-alignments 100
 
 For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Tue May  5 02:10:27 2026
-Total CPU time used: 499.379 seconds (0h:8m:19s)
-Total wall-clock time used: 327.272 seconds (0h:5m:27s)
+Date and time: Sat May 16 11:52:22 2026
+Total CPU time used: 1.07479 seconds (0h:0m:1s)
+Total wall-clock time used: 1.11003 seconds (0h:0m:1s)
 

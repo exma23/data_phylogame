@@ -1,9 +1,9 @@
 IQ-TREE 3.1.1 built Apr  8 2026
 
-Input file name: /root/final_thesis/data/dna/test/3/data.phy
-User tree file name: /root/final_thesis/data/dna/test/3/start.newick
+Input file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/3/data.phy
+User tree file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/3/start.newick
 Type of analysis: tree reconstruction
-Random seed number: 311204
+Random seed number: 580646
 
 REFERENCES
 ----------
@@ -77,48 +77,48 @@ Corrected Akaike information criterion (AICc) score: 2653.5884
 Bayesian information criterion (BIC) score: 2700.9374
 
 Total tree length (sum of branch lengths): 0.2360
-Sum of internal branch lengths: 0.0972 (41.1894% of tree length)
+Sum of internal branch lengths: 0.0972 (41.1899% of tree length)
 
 NOTE: Tree is UNROOTED although outgroup taxon 'Sp000' is drawn at root
 
 +----Sp000
 |
 |              +-------Sp001
-+--------------| (N2)
++--------------|
 |              |                           +--------Sp003
-|              |                        +--| (N4)
+|              |                        +--|
 |              |                        |  +---------------Sp005
-|              |                     +--| (N8)
+|              |                     +--|
 |              |                     |  +----------Sp004
-|              +---------------------| (N7)
+|              +---------------------|
 |                                    +-------Sp006
 |
 +---Sp002
 
 Tree in newick format:
 
-(Sp000:0.0111378257,(Sp001:0.0177578944,(((Sp003:0.0213651753,Sp005:0.0358291674)N4:0.0051132908,Sp004:0.0246105297)N8:0.0077569440,Sp006:0.0188776791)N7:0.0495657272)N2:0.0347736881,Sp002:0.0092187750);
+(Sp000:0.0111377313,(Sp001:0.0177566313,(((Sp003:0.0213660333,Sp005:0.0358282164):0.0051138790,Sp004:0.0246105737):0.0077565555,Sp006:0.0188780364):0.0495667834):0.0347739182,Sp002:0.0092187779);
 
 ALISIM COMMAND
 --------------
 To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
 
---alisim simulated_MSA -t precompute/3/3_infer.treefile -m "GTR{3.70788,5.93679,16.8125,0.00094,12.4258}+FU{0.3013,0.13503,0.16868,0.39499}+I{0.524}+G4{0.611}" --length 571
+--alisim simulated_MSA -t /home/ha/Code/final_thesis/data_phylov2/precompute/3/3_infer.treefile -m "GTR{3.70788,5.93679,16.8125,0.00094,12.4258}+FU{0.3013,0.13503,0.16868,0.39499}+I{0.524}+G4{0.611}" --length 571
 
 To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
 
-iqtree -s /root/final_thesis/data/dna/test/3/data.phy --alisim mimicked_MSA
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/3/data.phy --alisim mimicked_MSA
 
 To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
 
-iqtree -s /root/final_thesis/data/dna/test/3/data.phy --alisim mimicked_MSA --num-alignments 100
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/3/data.phy --alisim mimicked_MSA --num-alignments 100
 
 For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Tue May  5 00:10:08 2026
-Total CPU time used: 636.823 seconds (0h:10m:36s)
-Total wall-clock time used: 410.347 seconds (0h:6m:50s)
+Date and time: Sat May 16 11:52:07 2026
+Total CPU time used: 0.19328 seconds (0h:0m:0s)
+Total wall-clock time used: 0.213229 seconds (0h:0m:0s)
 

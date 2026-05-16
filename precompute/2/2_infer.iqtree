@@ -1,9 +1,9 @@
 IQ-TREE 3.1.1 built Apr  8 2026
 
-Input file name: /root/final_thesis/data/dna/test/2/data.phy
-User tree file name: /root/final_thesis/data/dna/test/2/start.newick
+Input file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/2/data.phy
+User tree file name: /home/ha/Code/final_thesis/data_phylov2/dna/test/2/start.newick
 Type of analysis: tree reconstruction
-Random seed number: 210760
+Random seed number: 152129
 
 REFERENCES
 ----------
@@ -69,56 +69,56 @@ Relative rates are computed as MEAN of the portion of the Gamma distribution fal
 MAXIMUM LIKELIHOOD TREE
 -----------------------
 
-Log-likelihood of the tree: -12443.5748 (s.e. 112.9126)
+Log-likelihood of the tree: -12443.5277 (s.e. 112.9117)
 Unconstrained log-likelihood (without tree): -13581.1220
 Number of free parameters (#branches + #model parameters): 11
-Akaike information criterion (AIC) score: 24909.1496
-Corrected Akaike information criterion (AICc) score: 24909.2258
-Bayesian information criterion (BIC) score: 24976.8427
+Akaike information criterion (AIC) score: 24909.0555
+Corrected Akaike information criterion (AICc) score: 24909.1317
+Bayesian information criterion (BIC) score: 24976.7487
 
 Total tree length (sum of branch lengths): 1.8913
-Sum of internal branch lengths: 0.5665 (29.9548% of tree length)
+Sum of internal branch lengths: 0.5664 (29.9463% of tree length)
 
 NOTE: Tree is UNROOTED although outgroup taxon 'Sp000' is drawn at root
 
 +**Sp000
-| (N6)
+|
 |                                                          +**Sp001
-|                            +-----------------------------| (N5)
+|                            +-----------------------------|
 |                            |                             +**Sp004
-|     +----------------------| (N3)
+|     +----------------------|
 |     |                      +----------------------------Sp003
 +-----|
-|     |      +**Sp002
-|     +------| (N7)
-|            +**Sp006
+|     |       +**Sp002
+|     +-------|
+|             +**Sp006
 |
 +**Sp005
 
 Tree in newick format:
 
-(Sp000:0.0000020034,(((Sp001:0.0000021219,Sp004:0.0000021002)N5:0.5983243355,Sp003:0.5712878676)N3:0.4487126099,(Sp002:0.0000025933,Sp006:0.0000025259)N7:0.1551250449):0.1178177069,Sp005:0.0000026415)N6;
+(Sp000:0.0000000100,(((Sp001:0.0000000100,Sp004:0.0000000100):0.5983452931,Sp003:0.5712712106):0.4487254781,(Sp002:0.0000000100,Sp006:0.0000000100):0.1553036769):0.1176462683,Sp005:0.0000000100);
 
 ALISIM COMMAND
 --------------
 To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
 
---alisim simulated_MSA -t precompute/2/2_infer.treefile -m "GTR{3.0055,4.94612,0.46837,0.70587,11.0174}+FU{0.338807,0.188658,0.218998,0.253537}+I{0.409}+G4{2.219}" --length 3477
+--alisim simulated_MSA -t /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.treefile -m "GTR{3.0055,4.94612,0.46837,0.70587,11.0174}+FU{0.338807,0.188658,0.218998,0.253537}+I{0.409}+G4{2.219}" --length 3477
 
 To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
 
-iqtree -s /root/final_thesis/data/dna/test/2/data.phy --alisim mimicked_MSA
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/2/data.phy --alisim mimicked_MSA
 
 To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
 
-iqtree -s /root/final_thesis/data/dna/test/2/data.phy --alisim mimicked_MSA --num-alignments 100
+iqtree -s /home/ha/Code/final_thesis/data_phylov2/dna/test/2/data.phy --alisim mimicked_MSA --num-alignments 100
 
 For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
 
 TIME STAMP
 ----------
 
-Date and time: Tue May  5 00:03:17 2026
-Total CPU time used: 455.551 seconds (0h:7m:35s)
-Total wall-clock time used: 301.575 seconds (0h:5m:1s)
+Date and time: Sat May 16 11:52:07 2026
+Total CPU time used: 0.352177 seconds (0h:0m:0s)
+Total wall-clock time used: 0.36925 seconds (0h:0m:0s)
 

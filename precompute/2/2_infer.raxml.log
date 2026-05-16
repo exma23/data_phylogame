@@ -5,11 +5,11 @@ Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Be
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-System: AMD Eng Sample: 100-000000425_37/24_N, 64 cores, 503 GB RAM
+System: 13th Gen Intel(R) Core(TM) i5-13500H, 12 cores, 31 GB RAM (allocated: 8 physical cores)
 
-RAxML-NG was called at 05-May-2026 00:03:17 as follows:
+RAxML-NG was called at 16-May-2026 11:52:07 as follows:
 
-raxml-ng --search --msa /root/final_thesis/data/dna/test/2/data.phy --tree /root/final_thesis/data/dna/test/2/start.newick --model GTR{3.00550/4.94612/0.46837/0.70587/11.01738/1.00000}+I{0.409}+G{2.219}+F{0.33881/0.18866/0.21900/0.25354} --prefix precompute/2/2_infer --threads auto --seed 42 --force perf_threads
+raxml-ng --search --msa /home/ha/Code/final_thesis/data_phylov2/dna/test/2/data.phy --tree /home/ha/Code/final_thesis/data_phylov2/dna/test/2/start.newick --model GTR{3.00550/4.94612/0.46837/0.70587/11.01738/1.00000}+I{0.409}+G{2.219}+F{0.33881/0.18866/0.21900/0.25354} --prefix /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer --threads 1 --seed 42 --force perf_threads --redo
 
 Analysis options:
   run mode: ML tree search
@@ -25,11 +25,13 @@ Analysis options:
   fast CLV updates: ON
   branch lengths: proportional (ML estimate, algorithm: NR-FAST)
   SIMD kernels: AVX2
-  parallelization: coarse-grained (auto), PTHREADS (auto)
+  parallelization: coarse-grained (auto), NONE/sequential
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
 
 WARNING: Running in FORCE mode: some safety checks are disabled!
 
-[00:00:00] Reading alignment from file: /root/final_thesis/data/dna/test/2/data.phy
+[00:00:00] Reading alignment from file: /home/ha/Code/final_thesis/data_phylov2/dna/test/2/data.phy
 [00:00:00] Loaded alignment with 7 taxa and 3477 sites
 
 WARNING: Sequences Sp000 and Sp005 are exactly identical!
@@ -38,7 +40,7 @@ WARNING: Sequences Sp002 and Sp006 are exactly identical!
 WARNING: Duplicate sequences found: 3
 
 NOTE: Reduced alignment (with duplicates and gap-only sites/taxa removed) 
-NOTE: was saved to: /root/final_thesis/precompute/2/2_infer.raxml.reduced.phy
+NOTE: was saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.raxml.reduced.phy
 
 Alignment comprises 1 partitions and 293 patterns
 
@@ -49,29 +51,29 @@ Gaps: 2.82 %
 Invariant sites: 53.93 %
 
 
-NOTE: Binary MSA file created: precompute/2/2_infer.raxml.rba
+NOTE: Binary MSA file created: /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.raxml.rba
 
-Parallelization scheme autoconfig: 1 worker(s) x 5 thread(s)
+Parallelization scheme autoconfig: 1 worker(s) x 1 thread(s)
 
-[00:00:00] Loading user starting tree(s) from: /root/final_thesis/data/dna/test/2/start.newick
+[00:00:00] Loading user starting tree(s) from: /home/ha/Code/final_thesis/data_phylov2/dna/test/2/start.newick
 Parallel reduction/worker buffer size: 1 KB  / 0 KB
 
-[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 59 / 944
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 293 / 4688
 [00:00:00] Data distribution: max. searches per worker: 1
 
 Starting ML tree search with 1 distinct starting trees
 
-[00:00:00 -19524.733866] Initial branch length optimization
-[00:00:00 -16201.914120] Model parameter optimization (eps = 10.000000)
-[00:00:00 -16201.408370] AUTODETECT spr round 1 (radius: 5)
-[00:00:00 -12447.895468] SPR radius for FAST iterations: 5 (autodetect)
-[00:00:00 -12447.895468] Model parameter optimization (eps = 3.000000)
-[00:00:00 -12445.539212] FAST spr round 1 (radius: 5)
-[00:00:00 -12443.937077] Model parameter optimization (eps = 1.000000)
-[00:00:00 -12443.717048] SLOW spr round 1 (radius: 5)
-[00:00:00 -12443.579383] Model parameter optimization (eps = 0.100000)
+[00:00:00 -12443.547847] Initial branch length optimization
+[00:00:00 -12443.547817] Model parameter optimization (eps = 10.000000)
+[00:00:00 -12443.547807] AUTODETECT spr round 1 (radius: 5)
+[00:00:00 -12443.547804] SPR radius for FAST iterations: 5 (autodetect)
+[00:00:00 -12443.547804] Model parameter optimization (eps = 3.000000)
+[00:00:00 -12443.547802] FAST spr round 1 (radius: 5)
+[00:00:00 -12443.547801] Model parameter optimization (eps = 1.000000)
+[00:00:00 -12443.547801] SLOW spr round 1 (radius: 5)
+[00:00:00 -12443.547801] Model parameter optimization (eps = 0.100000)
 
-[00:00:00] ML tree search #1, logLikelihood: -12443.561403
+[00:00:00] ML tree search #1, logLikelihood: -12443.547801
 
 
 Optimized model parameters:
@@ -83,17 +85,17 @@ Optimized model parameters:
    Substitution rates (user): 3.005500 4.946120 0.468370 0.705870 11.017380 1.000000 
 
 
-Final LogLikelihood: -12443.561403
+Final LogLikelihood: -12443.547801
 
-AIC score: 24909.122806 / AICc score: 24909.198996 / BIC score: 24976.815982
+AIC score: 24909.095602 / AICc score: 24909.171793 / BIC score: 24976.788779
 Free parameters (model + branch lengths): 11
 
-Best ML tree saved to: /root/final_thesis/precompute/2/2_infer.raxml.bestTree
-Optimized model saved to: /root/final_thesis/precompute/2/2_infer.raxml.bestModel
+Best ML tree saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.raxml.bestTree
+Optimized model saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.raxml.bestModel
 
-Execution log saved to: /root/final_thesis/precompute/2/2_infer.raxml.log
+Execution log saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/2/2_infer.raxml.log
 
-Analysis started: 05-May-2026 00:03:17 / finished: 05-May-2026 00:03:17
+Analysis started: 16-May-2026 11:52:07 / finished: 16-May-2026 11:52:07
 
-Elapsed time: 0.035 seconds
+Elapsed time: 0.044 seconds
 

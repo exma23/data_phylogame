@@ -3,113 +3,106 @@ Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
 Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
 Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
 
-Host:    3b61efb33633 (AVX2, FMA3, 503 GB RAM)
-Command: iqtree3 -s /root/final_thesis/data/dna/test/36/data.phy -t /root/final_thesis/data/dna/test/36/start.newick -m GTR{1.26716,4.21910,0.81028,1.63423,4.16380}+F{0.31582,0.20173,0.21180,0.27064}+I{0.756}+G4{0.925} --prefix precompute/36/36_infer --threads auto --redo
-Seed:    819816 (Using SPRNG - Scalable Parallel Random Number Generator)
-Time:    Tue May  5 03:13:01 2026
-Kernel:  AVX+FMA - auto-detect threads (128 CPU cores detected)
+Host:    ha-ThinkPad-E14-Gen-5 (AVX2, FMA3, 31 GB RAM)
+Command: iqtree3 -s /home/ha/Code/final_thesis/data_phylov2/dna/test/36/data.phy -t /home/ha/Code/final_thesis/data_phylov2/dna/test/36/start.newick -m GTR{0.52769,4.14807,1.55735,1.25543,4.29748}+F{0.25021,0.24173,0.19348,0.31458}+I{0.000}+G4{0.192} --prefix /home/ha/Code/final_thesis/data_phylov2/precompute/36/36_infer -T 1 --redo
+Seed:    94167 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 16 11:52:38 2026
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
 
-Reading alignment file /root/final_thesis/data/dna/test/36/data.phy ... Phylip format detected
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/ha/Code/final_thesis/data_phylov2/dna/test/36/data.phy ... Phylip format detected
 Alignment most likely contains DNA/RNA sequences
-Constructing alignment: done in 0.0608482 secs using 1458% CPU
-Alignment has 20 sequences with 2772 columns, 202 distinct patterns
-56 parsimony-informative, 148 singleton sites, 2568 constant sites
+Constructing alignment: done in 0.000199307 secs using 66.23% CPU
+Alignment has 20 sequences with 528 columns, 135 distinct patterns
+99 parsimony-informative, 23 singleton sites, 406 constant sites
        Gap/Ambiguity  Composition  p-value
-Analyzing sequences: done in 0.0919732 secs using 499.3% CPU
-   1  Sp000    1.37%    passed     99.57%
-   2  Sp001    0.36%    passed     99.27%
-   3  Sp002    0.43%    passed     99.86%
-   4  Sp003    0.94%    passed     99.76%
-   5  Sp004    0.11%    passed     99.58%
-   6  Sp005    0.51%    passed     99.85%
-   7  Sp006    0.65%    passed     99.81%
-   8  Sp007    0.87%    passed     99.96%
-   9  Sp008    1.01%    passed     99.41%
-  10  Sp009    1.33%    passed     99.99%
-  11  Sp010    0.90%    passed     99.68%
-  12  Sp011    1.12%    passed     99.80%
-  13  Sp012    0.83%    passed     99.97%
-  14  Sp013    0.54%    passed     99.89%
-  15  Sp014    1.19%    passed     99.07%
-  16  Sp015    0.79%    passed     99.76%
-  17  Sp016    0.69%    passed     99.53%
-  18  Sp017    1.73%    passed     99.73%
-  19  Sp018    0.61%    passed     99.58%
-  20  Sp019    0.51%    passed     99.82%
-****  TOTAL    0.82%  0 sequences failed composition chi2 test (p-value<5%; df=3)
-Checking for duplicate sequences: done in 0.0928814 secs using 764% CPU
-Reading input tree file /root/final_thesis/data/dna/test/36/start.newick ...
-WARNING: Normalizing State frequencies so that sum of them equals to 1
+Analyzing sequences: done in 5.935e-06 secs using 67.4% CPU
+   1  Sp000    5.11%    passed     91.50%
+   2  Sp001    5.11%    passed     94.57%
+   3  Sp002    4.55%    passed     97.49%
+   4  Sp003    4.55%    passed     97.47%
+   5  Sp004    4.36%    passed     67.35%
+   6  Sp005    4.55%    passed     95.41%
+   7  Sp006    5.68%    passed     85.03%
+   8  Sp007    5.68%    passed     79.22%
+   9  Sp008    5.68%    passed     80.62%
+  10  Sp009    5.68%    passed     79.22%
+  11  Sp010    5.68%    passed     79.22%
+  12  Sp011    5.49%    passed     91.80%
+  13  Sp012    2.46%    passed     86.61%
+  14  Sp013    1.52%    passed     77.17%
+  15  Sp014    2.08%    passed     84.90%
+  16  Sp015    2.27%    passed     64.58%
+  17  Sp016    5.11%    passed     96.71%
+  18  Sp017    5.30%    passed     94.95%
+  19  Sp018    4.55%    passed     98.65%
+  20  Sp019    4.55%    passed     98.65%
+****  TOTAL    4.50%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Sp010 is identical to Sp009 but kept for subsequent analysis
+NOTE: Sp019 is identical to Sp018 but kept for subsequent analysis
+Checking for duplicate sequences: done in 2.4357e-05 secs using 65.69% CPU
+Reading input tree file /home/ha/Code/final_thesis/data_phylov2/dna/test/36/start.newick ...
 
 NOTE: 0 MB RAM (0 GB) is required!
-Measuring multi-threading efficiency up to 128 CPU cores
-Increase to 10 rounds for branch lengths
-31823 trees examined
-Threads: 1 / Time: 128.001 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -6095
-Threads: 2 / Time: 184.277 sec / Speedup: 0.695 / Efficiency: 35% / LogL: -6095
-Determining AUTO threadcount: done in 312.278 secs using 151.5% CPU
-BEST NUMBER OF THREADS: 1
-
 Estimate model parameters (epsilon = 0.100)
-1. Initial log-likelihood: -6729.377
-2. Current log-likelihood: -6234.409
-3. Current log-likelihood: -6074.706
-4. Current log-likelihood: -6073.905
-Optimal log-likelihood: -6073.883
-Rate parameters:  A-C: 1.26716  A-G: 4.21910  A-T: 0.81028  C-G: 1.63423  C-T: 4.16380  G-T: 1.00000
-Base frequencies:  A: 0.316  C: 0.202  G: 0.212  T: 0.271
-Proportion of invariable sites: 0.756
-Gamma shape alpha: 0.925
-Parameters optimization took 4 rounds (0.007 sec)
+1. Initial log-likelihood: -1750.008
+Optimal log-likelihood: -1750.012
+Rate parameters:  A-C: 0.52769  A-G: 4.14807  A-T: 1.55735  C-G: 1.25543  C-T: 4.29748  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.242  G: 0.193  T: 0.315
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 0.192
+Parameters optimization took 1 rounds (0.002 sec)
 Wrote distance file to... 
 
 Do NNI search on 1 best initial trees
 Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 1: -5754.723
+BETTER TREE FOUND at iteration 1: -1746.612
 Finish initializing candidate tree set (2)
-Current best tree score: -5754.723 / CPU time: 0.046
+Current best tree score: -1746.612 / CPU time: 0.006
 Number of iterations: 1
 --------------------------------------------------------------------
 |               OPTIMIZING CANDIDATE TREE SET                      |
 --------------------------------------------------------------------
-Estimate model parameters (epsilon = 0.100)
-BETTER TREE FOUND at iteration 7: -5752.014
-Iteration 10 / LogL: -5754.728 / Time: 0h:5m:12s
-Iteration 20 / LogL: -5752.015 / Time: 0h:5m:12s
-Iteration 30 / LogL: -5752.015 / Time: 0h:5m:12s (0h:13m:50s left)
-Iteration 40 / LogL: -5752.035 / Time: 0h:5m:12s (0h:8m:57s left)
-Iteration 50 / LogL: -5752.014 / Time: 0h:5m:13s (0h:6m:3s left)
-Iteration 60 / LogL: -5752.015 / Time: 0h:5m:13s (0h:4m:9s left)
-Iteration 70 / LogL: -5752.035 / Time: 0h:5m:13s (0h:2m:47s left)
-Iteration 80 / LogL: -5752.076 / Time: 0h:5m:13s (0h:1m:47s left)
-Iteration 90 / LogL: -5752.016 / Time: 0h:5m:13s (0h:0m:59s left)
-Iteration 100 / LogL: -5757.197 / Time: 0h:5m:13s (0h:0m:22s left)
-TREE SEARCH COMPLETED AFTER 108 ITERATIONS / Time: 0h:5m:13s
+Iteration 10 / LogL: -1746.612 / Time: 0h:0m:0s
+Iteration 20 / LogL: -1746.613 / Time: 0h:0m:0s
+UPDATE BEST LOG-LIKELIHOOD: -1746.612
+Iteration 30 / LogL: -1746.615 / Time: 0h:0m:0s (0h:0m:1s left)
+Iteration 40 / LogL: -1746.613 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 50 / LogL: -1746.612 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 60 / LogL: -1746.614 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 70 / LogL: -1746.615 / Time: 0h:0m:0s (0h:0m:0s left)
+Iteration 80 / LogL: -1746.613 / Time: 0h:0m:0s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -1746.612
+Iteration 90 / LogL: -1746.615 / Time: 0h:0m:1s (0h:0m:0s left)
+Iteration 100 / LogL: -1746.612 / Time: 0h:0m:1s (0h:0m:0s left)
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:1s
 
 --------------------------------------------------------------------
 |                    FINALIZING TREE SEARCH                        |
 --------------------------------------------------------------------
 Performs final model parameters optimization
 Estimate model parameters (epsilon = 0.010)
-1. Initial log-likelihood: -5752.014
-Optimal log-likelihood: -5752.014
-Rate parameters:  A-C: 1.26716  A-G: 4.21910  A-T: 0.81028  C-G: 1.63423  C-T: 4.16380  G-T: 1.00000
-Base frequencies:  A: 0.316  C: 0.202  G: 0.212  T: 0.271
-Proportion of invariable sites: 0.756
-Gamma shape alpha: 0.925
+1. Initial log-likelihood: -1746.612
+Optimal log-likelihood: -1746.612
+Rate parameters:  A-C: 0.52769  A-G: 4.14807  A-T: 1.55735  C-G: 1.25543  C-T: 4.29748  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.242  G: 0.193  T: 0.315
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 0.192
 Parameters optimization took 1 rounds (0.001 sec)
-BEST SCORE FOUND : -5752.014
-Total tree length: 0.106
+BEST SCORE FOUND : -1746.612
+Total tree length: 0.442
 
-Total number of iterations: 108
-CPU time used for tree search: 1.115 sec (0h:0m:1s)
-Wall-clock time used for tree search: 1.210 sec (0h:0m:1s)
-Total CPU time used: 475.810 sec (0h:7m:55s)
-Total wall-clock time used: 313.606 sec (0h:5m:13s)
+Total number of iterations: 102
+CPU time used for tree search: 1.186 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.232 sec (0h:0m:1s)
+Total CPU time used: 1.194 sec (0h:0m:1s)
+Total wall-clock time used: 1.240 sec (0h:0m:1s)
 
 Analysis results written to: 
-  IQ-TREE report:                precompute/36/36_infer.iqtree
-  Maximum-likelihood tree:       precompute/36/36_infer.treefile
-  Screen log file:               precompute/36/36_infer.log
+  IQ-TREE report:                /home/ha/Code/final_thesis/data_phylov2/precompute/36/36_infer.iqtree
+  Maximum-likelihood tree:       /home/ha/Code/final_thesis/data_phylov2/precompute/36/36_infer.treefile
+  Screen log file:               /home/ha/Code/final_thesis/data_phylov2/precompute/36/36_infer.log
 
-Date and Time: Tue May  5 03:18:15 2026
+Date and Time: Sat May 16 11:52:39 2026

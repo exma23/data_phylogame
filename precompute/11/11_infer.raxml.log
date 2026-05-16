@@ -5,11 +5,11 @@ Contributors: Diego Darriba, Tomas Flouri, Benoit Morel, Sarah Lutteropp, Ben Be
 Latest version: https://github.com/amkozlov/raxml-ng
 Questions/problems/suggestions? Please visit: https://groups.google.com/forum/#!forum/raxml
 
-System: AMD Eng Sample: 100-000000425_37/24_N, 64 cores, 503 GB RAM
+System: 13th Gen Intel(R) Core(TM) i5-13500H, 12 cores, 31 GB RAM (allocated: 8 physical cores)
 
-RAxML-NG was called at 05-May-2026 00:59:24 as follows:
+RAxML-NG was called at 16-May-2026 11:52:10 as follows:
 
-raxml-ng --search --msa /root/final_thesis/data/dna/test/11/data.phy --tree /root/final_thesis/data/dna/test/11/start.newick --model GTR{0.80584/2.03211/0.99464/0.61748/5.03249/1.00000}+I{0.390}+G{0.903}+F{0.27136/0.20326/0.23485/0.29053} --prefix precompute/11/11_infer --threads auto --seed 42 --force perf_threads
+raxml-ng --search --msa /home/ha/Code/final_thesis/data_phylov2/dna/test/11/data.phy --tree /home/ha/Code/final_thesis/data_phylov2/dna/test/11/start.newick --model GTR{1.54982/4.44274/0.90839/1.94336/5.95309/1.00000}+I{0.253}+G{1.051}+F{0.20568/0.27789/0.27475/0.24168} --prefix /home/ha/Code/final_thesis/data_phylov2/precompute/11/11_infer --threads 1 --seed 42 --force perf_threads --redo
 
 Analysis options:
   run mode: ML tree search
@@ -25,72 +25,70 @@ Analysis options:
   fast CLV updates: ON
   branch lengths: proportional (ML estimate, algorithm: NR-FAST)
   SIMD kernels: AVX2
-  parallelization: coarse-grained (auto), PTHREADS (auto)
+  parallelization: coarse-grained (auto), NONE/sequential
+
+WARNING: Running in REDO mode: existing checkpoints are ignored, and all result files will be overwritten!
 
 WARNING: Running in FORCE mode: some safety checks are disabled!
 
-[00:00:00] Reading alignment from file: /root/final_thesis/data/dna/test/11/data.phy
-[00:00:00] Loaded alignment with 12 taxa and 2987 sites
+[00:00:00] Reading alignment from file: /home/ha/Code/final_thesis/data_phylov2/dna/test/11/data.phy
+[00:00:00] Loaded alignment with 12 taxa and 576 sites
 
-Alignment comprises 1 partitions and 135 patterns
+Alignment comprises 1 partitions and 259 patterns
 
 Partition 0: noname
-Model: GTR{0.80584/2.03211/0.99464/0.61748/5.03249/1}+FU{0.27136/0.20326/0.23485/0.29053}+IU{0.39}+G4m{0.903}
-Alignment sites / patterns: 2987 / 135
-Gaps: 1.29 %
-Invariant sites: 87.71 %
+Model: GTR{1.54982/4.44274/0.90839/1.94336/5.95309/1}+FU{0.20568/0.27789/0.27475/0.24168}+IU{0.253}+G4m{1.051}
+Alignment sites / patterns: 576 / 259
+Gaps: 0.95 %
+Invariant sites: 47.40 %
 
 
-NOTE: Binary MSA file created: precompute/11/11_infer.raxml.rba
+NOTE: Binary MSA file created: /home/ha/Code/final_thesis/data_phylov2/precompute/11/11_infer.raxml.rba
 
-Parallelization scheme autoconfig: 1 worker(s) x 2 thread(s)
+Parallelization scheme autoconfig: 1 worker(s) x 1 thread(s)
 
-[00:00:00] Loading user starting tree(s) from: /root/final_thesis/data/dna/test/11/start.newick
+[00:00:00] Loading user starting tree(s) from: /home/ha/Code/final_thesis/data_phylov2/dna/test/11/start.newick
 Parallel reduction/worker buffer size: 1 KB  / 0 KB
 
-[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 68 / 1088
+[00:00:00] Data distribution: max. partitions/sites/weight per thread: 1 / 259 / 4144
 [00:00:00] Data distribution: max. searches per worker: 1
 
 Starting ML tree search with 1 distinct starting trees
 
-[00:00:00 -9821.534710] Initial branch length optimization
-[00:00:00 -8272.887893] Model parameter optimization (eps = 10.000000)
-[00:00:00 -8272.376298] AUTODETECT spr round 1 (radius: 5)
-[00:00:00 -6255.458365] AUTODETECT spr round 2 (radius: 10)
-[00:00:00 -6255.439077] SPR radius for FAST iterations: 5 (autodetect)
-[00:00:00 -6255.439077] Model parameter optimization (eps = 3.000000)
-[00:00:00 -6255.436567] FAST spr round 1 (radius: 5)
-[00:00:00 -6255.436105] Model parameter optimization (eps = 1.000000)
-[00:00:00 -6255.436096] SLOW spr round 1 (radius: 5)
-[00:00:00 -6255.436095] SLOW spr round 2 (radius: 10)
-[00:00:00 -6255.436095] Model parameter optimization (eps = 0.100000)
+[00:00:00 -3513.286529] Initial branch length optimization
+[00:00:00 -3513.286509] Model parameter optimization (eps = 10.000000)
+[00:00:00 -3513.286506] AUTODETECT spr round 1 (radius: 5)
+[00:00:00 -3513.286505] SPR radius for FAST iterations: 5 (autodetect)
+[00:00:00 -3513.286505] Model parameter optimization (eps = 3.000000)
+[00:00:00 -3513.286505] FAST spr round 1 (radius: 5)
+[00:00:00 -3513.286505] Model parameter optimization (eps = 1.000000)
+[00:00:00 -3513.286505] SLOW spr round 1 (radius: 5)
+[00:00:00 -3513.286505] SLOW spr round 2 (radius: 10)
+[00:00:00 -3513.286505] Model parameter optimization (eps = 0.100000)
 
-[00:00:00] ML tree search #1, logLikelihood: -6255.436095
+[00:00:00] ML tree search #1, logLikelihood: -3513.286505
 
 
 Optimized model parameters:
 
    Partition 0: noname
-   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 0.903000 (user),  weights&rates: (0.250000,0.117217) (0.250000,0.445521) (0.250000,0.981864) (0.250000,2.455399) 
-   P-inv (user): 0.390000
-   Base frequencies (user): 0.271360 0.203260 0.234850 0.290530 
-   Substitution rates (user): 0.805840 2.032110 0.994640 0.617480 5.032490 1.000000 
+   Rate heterogeneity: GAMMA (4 cats, mean),  alpha: 1.051000 (user),  weights&rates: (0.250000,0.147016) (0.250000,0.491562) (0.250000,1.007962) (0.250000,2.353460) 
+   P-inv (user): 0.253000
+   Base frequencies (user): 0.205680 0.277890 0.274750 0.241680 
+   Substitution rates (user): 1.549820 4.442740 0.908390 1.943360 5.953090 1.000000 
 
 
-Final LogLikelihood: -6255.436095
+Final LogLikelihood: -3513.286505
 
-AIC score: 12552.872189 / AICc score: 12553.183825 / BIC score: 12678.914710
+AIC score: 7068.573011 / AICc score: 7070.240881 / BIC score: 7160.051272
 Free parameters (model + branch lengths): 21
 
-WARNING: Best ML tree contains 1 near-zero branches!
+Best ML tree saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/11/11_infer.raxml.bestTree
+Optimized model saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/11/11_infer.raxml.bestModel
 
-Best ML tree with collapsed near-zero branches saved to: /root/final_thesis/precompute/11/11_infer.raxml.bestTreeCollapsed
-Best ML tree saved to: /root/final_thesis/precompute/11/11_infer.raxml.bestTree
-Optimized model saved to: /root/final_thesis/precompute/11/11_infer.raxml.bestModel
+Execution log saved to: /home/ha/Code/final_thesis/data_phylov2/precompute/11/11_infer.raxml.log
 
-Execution log saved to: /root/final_thesis/precompute/11/11_infer.raxml.log
+Analysis started: 16-May-2026 11:52:10 / finished: 16-May-2026 11:52:10
 
-Analysis started: 05-May-2026 00:59:24 / finished: 05-May-2026 00:59:24
-
-Elapsed time: 0.054 seconds
+Elapsed time: 0.162 seconds
 
