@@ -1,0 +1,74 @@
+IQ-TREE version 3.1.1 for Linux x86 64-bit built Apr  8 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    ha-ThinkPad-E14-Gen-5 (AVX2, FMA3, 31 GB RAM)
+Command: iqtree3 -s /home/ha/Code/data_phylogame/dna/test/35/data.phy -m GTR{1.07142,7.53486,1.48391,1.65649,10.32865}+F{0.19985,0.26212,0.24478,0.29325}+I{0.388}+G4{0.810} -t RANDOM --tree-fix -T 1 --prefix /home/ha/Code/data_phylogame/precompute_random/35/tmp_start --redo
+Seed:    669845 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 18 00:03:07 2026
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file /home/ha/Code/data_phylogame/dna/test/35/data.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.000357386 secs using 40.01% CPU
+Alignment has 20 sequences with 607 columns, 191 distinct patterns
+124 parsimony-informative, 80 singleton sites, 403 constant sites
+       Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 9.073e-06 secs using 33.07% CPU
+   1  Sp000    1.65%    passed     99.71%
+   2  Sp001    2.14%    passed     97.14%
+   3  Sp002    1.65%    passed     90.00%
+   4  Sp003    1.65%    passed     96.70%
+   5  Sp004    1.65%    passed     99.34%
+   6  Sp005    1.65%    passed     99.16%
+   7  Sp006    1.65%    passed     99.90%
+   8  Sp007    1.65%    passed     81.84%
+   9  Sp008    1.98%    passed     99.10%
+  10  Sp009    1.98%    passed     95.87%
+  11  Sp010    1.65%    passed     92.16%
+  12  Sp011    1.65%    passed     90.93%
+  13  Sp012    1.65%    passed     99.80%
+  14  Sp013    1.65%    passed     98.37%
+  15  Sp014    1.65%    passed     96.16%
+  16  Sp015    1.65%    passed     99.71%
+  17  Sp016    1.81%    passed     89.79%
+  18  Sp017    1.81%    passed     87.41%
+  19  Sp018    1.81%    passed     87.69%
+  20  Sp019   17.30%    passed     94.59%
+****  TOTAL    2.51%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 3.2446e-05 secs using 40.07% CPU
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.000 seconds
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2721.727
+2. Current log-likelihood: -2704.172
+3. Current log-likelihood: -2703.999
+Optimal log-likelihood: -2703.997
+Rate parameters:  A-C: 1.07142  A-G: 7.53486  A-T: 1.48391  C-G: 1.65649  C-T: 10.32865  G-T: 1.00000
+Base frequencies:  A: 0.200  C: 0.262  G: 0.245  T: 0.293
+Proportion of invariable sites: 0.388
+Gamma shape alpha: 0.810
+Parameters optimization took 3 rounds (0.003 sec)
+Log-likelihood of random tree: -3122.258
+Wrote distance file to... 
+BEST SCORE FOUND : -3122.258
+Total tree length: 1.333
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 0.008 sec (0h:0m:0s)
+Total wall-clock time used: 0.008 sec (0h:0m:0s)
+
+Analysis results written to: 
+  IQ-TREE report:                /home/ha/Code/data_phylogame/precompute_random/35/tmp_start.iqtree
+  Maximum-likelihood tree:       /home/ha/Code/data_phylogame/precompute_random/35/tmp_start.treefile
+  Screen log file:               /home/ha/Code/data_phylogame/precompute_random/35/tmp_start.log
+
+Date and Time: Mon May 18 00:03:07 2026
